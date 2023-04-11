@@ -59,4 +59,4 @@ Route::get('/console/types/edit/{type:id}', [TypesController::class, 'editForm']
 Route::post('/console/types/edit/{type:id}', [TypesController::class, 'edit'])->where('type', '[0-9]+')->middleware('auth');
 Route::get('/console/types/delete/{type:id}', [TypesController::class, 'delete'])->where('type', '[0-9]+')->middleware('auth');
 
-Route::get('/console/qualifications/list', [TypesController::class, 'list'])->middleware('auth');
+Route::get('/console/qualifications/list', [QualificationsController::class, 'list'])->middleware('auth');
