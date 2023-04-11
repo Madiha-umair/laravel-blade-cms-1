@@ -60,3 +60,8 @@ Route::post('/console/types/edit/{type:id}', [TypesController::class, 'edit'])->
 Route::get('/console/types/delete/{type:id}', [TypesController::class, 'delete'])->where('type', '[0-9]+')->middleware('auth');
 
 Route::get('/console/qualifications/list', [QualificationsController::class, 'list'])->middleware('auth');
+Route::get('/console/qualifications/add', [QualificationsController::class, 'addForm'])->middleware('auth');
+Route::post('/console/qualifications/add', [QualificationsController::class, 'add'])->middleware('auth');
+Route::get('/console/qualifications/edit/{qualification:id}', [QualificationsController::class, 'editForm'])->where('type', '[0-9]+')->middleware('auth');
+Route::post('/console/qualifications/edit/{qualification:id}', [QualificationsController::class, 'edit'])->where('type', '[0-9]+')->middleware('auth');
+Route::get('/console/qualifications/delete/{qualification:id}', [QualificationsController::class, 'delete'])->where('type', '[0-9]+')->middleware('auth');

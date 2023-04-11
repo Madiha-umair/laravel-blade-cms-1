@@ -20,15 +20,13 @@
         </tr>
         @foreach ($qualifications as $qualification)
             <tr>
+                <td>{{$qualification->image}}<td>
                 <td>{{$qualification->degree}}</td>
                 <td>{{$qualification->field}}</td>
                 <td>{{$qualification->institute}}</td>
                 <td>{{$qualification->location}}</td>
                 <td>{{$qualification->started_at}}</td>
                 <td>{{$qualification->ended_at}}</td>
-
-                <!--<td>{{$project->type->title}}</td>-->
-                <!--<td>{{$project->created_at->format('M j, Y')}}</td>-->
 
                 <td><a href="/console/qualifications/edit/{{$qualification->id}}">Edit</a></td>
                 <td><a href="/console/qualifications/delete/{{$qualification->id}}">Delete</a></td>

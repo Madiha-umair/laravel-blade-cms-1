@@ -13,12 +13,13 @@
     </div>
 
     <form method="post" action="/console/projects/image/{{$project->id}}" novalidate class="w3-margin-bottom" enctype="multipart/form-data">
-
+    
         @csrf
 
         <div class="w3-margin-bottom">
             <label for="image">Image:</label>
             <input type="file" name="image" id="image" value="{{old('image')}}" required>
+        
             
             @if ($errors->first('image'))
                 <br>

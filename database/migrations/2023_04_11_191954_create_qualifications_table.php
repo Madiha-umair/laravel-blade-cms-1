@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('field');
             $table->string('institute');
             $table->string('location');
-            $table->dateTime('started_at');
-            $table->dateTime('ended_at');
+            $table->date('started_at');
+            $table->date('ended_at');
             $table->timestamps();
         });
     }
