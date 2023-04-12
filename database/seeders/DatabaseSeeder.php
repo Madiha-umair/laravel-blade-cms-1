@@ -27,5 +27,6 @@ class DatabaseSeeder extends Seeder
         Type::factory()->count(3)->create();
         Project::factory()->count(4)->create();
         Qualification::factory()->count(4)->create(); 
+
     }
 }
