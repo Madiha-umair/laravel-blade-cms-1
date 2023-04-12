@@ -20,7 +20,7 @@
         </tr>
         @foreach ($qualifications as $qualification)
             <tr>
-                <td>{{$qualification->image}}<td>
+                <td>{{$qualification->image}}</td>
                 <td>{{$qualification->degree}}</td>
                 <td>{{$qualification->field}}</td>
                 <td>{{$qualification->institute}}</td>
