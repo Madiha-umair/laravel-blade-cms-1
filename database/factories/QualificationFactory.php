@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Qualification;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -22,7 +23,7 @@ class QualificationFactory extends Factory
             'institute' => $this->faker->sentence,
             'location' => $this->faker->sentence,
             'started_at' => $this->faker->date,
-            'ended_at' => $this->faker->date,
+            'ended_at' => $this->faker->date,      
         ];
     }
 }
