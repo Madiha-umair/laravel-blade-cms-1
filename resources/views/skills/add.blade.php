@@ -6,7 +6,7 @@
 
     <h2>Add Type</h2>
 
-    <form method="post" action="/console/types/add" novalidate class="w3-margin-bottom">
+    <form method="post" action="/console/skills/add" novalidate class="w3-margin-bottom">
 
         @csrf
 

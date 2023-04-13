@@ -24,16 +24,16 @@ class Project extends Model
         'user_id',
     ];
 
-    public function type()
+    public function skill()
     {
-        return $this->belongsTo(Type::class, 'type_id');
+        return $this->belongsTo(Skill::class, 'skill_id');
     }
 
     public function user()
     {
         return $this->belongsTo(USer::class, 'user_id');
     }
-    
+
     public function getRouteKeyName()
     {
         return 'slug';
